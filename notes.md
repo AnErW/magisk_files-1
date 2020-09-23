@@ -1,7 +1,9 @@
-## Magisk (e66b0bf3) (20425)
-- Upstream libsepol to support latest sepolicy binary format
-- Use intent + FIFO for communication between Magisk Manager and `magiskd` for su request.
-This should fix all su request dialog not showing up issues.
+## Magisk (8b29267a) (20426)
+- Update SELinux rules to fix ADB root access on Android 8.x
 
-## Magisk Manager (2eb00187) (299)
-- Fix su requests auto response
+## Magisk Manager (8b29267a) (300)
+- Fix su request auto response
+- Support theme switching pre Android 5.0
+- Add settings for DoH (disabled by default unless device is set to China locale)
+- More accurate device info detection
+- Hide OTA option on Pixel devices as it results in bootloops
