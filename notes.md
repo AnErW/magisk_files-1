@@ -1,9 +1,11 @@
-## Magisk (8b29267a) (20426)
-- Update SELinux rules to fix ADB root access on Android 8.x
+#### Release candidate!
 
-## Magisk Manager (8b29267a) (300)
-- Fix su request auto response
-- Support theme switching pre Android 5.0
-- Add settings for DoH (disabled by default unless device is set to China locale)
-- More accurate device info detection
-- Hide OTA option on Pixel devices as it results in bootloops
+## Magisk (d6dbab53) (20427)
+- Remove compressed ramdisk support
+- Update `magiskboot` to always pad images to original size with zeros
+- Add new `--install-module` command to `magisk` to install modules without Magisk Manager
+
+## Magisk Manager (d6dbab53) (301)
+- Support patching modern Samsung AP.tar (devices launched in 2020)
+- Fix inconsistent Internet status monitoring
+- Various minor improvements
